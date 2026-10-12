@@ -1,0 +1,288 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">● GAITHERSBURG &amp; MONTGOMERY COUNTY · SAME-DAY ESTIMATES</div>
+        <h1>DECK REPAIR<br />IN <span>GAITHERSBURG</span></h1>
+        <p class="hero-sub">Safe Decks. Solid Craftsmanship. Fast Response.</p>
+        <p class="hero-desc">When your deck shows signs of wear, rot, or instability in Gaithersburg, every step matters. Our licensed team delivers expert board replacement, railing repairs, structural fixes, and refinishing — with upfront pricing and workmanship you can trust across Montgomery County.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">⏱ Same-Day Estimates</span>
+          <span class="hero-tag">🛡 Licensed &amp; Insured</span>
+          <span class="hero-tag">✓ Upfront Pricing</span>
+          <span class="hero-tag">🪵 All Wood &amp; Composite</span>
+          <span class="hero-tag">🛡 Workmanship Guarantee</span>
+        </div>
+        <div class="hero-ctas">
+          <a href={`tel:${phone}`} class="btn btn-primary">Schedule an Estimate</a>
+          <a href={`tel:${phone}`} class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🪵</div>
+          <h3>Deck Looking Rough?</h3>
+          <p>We repair rotten boards, loose railings, structural issues, and restore the finish — often starting the same week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Gaithersburg Homeowners <span>Choose Us</span></h2>
+        <p>Maryland weather is tough on outdoor wood. Freeze-thaw cycles, humidity, and summer sun take a toll. You need a local crew that understands the climate and fixes it right the first time.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Same-Day Estimates</h3>
+          <p>Most estimate requests in Gaithersburg and nearby areas are scheduled the same day or next business day — no long waits.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Licensed &amp; Insured</h3>
+          <p>Fully licensed and insured for deck repair and related outdoor work throughout Montgomery County and surrounding areas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💵</div>
+          <h3>Upfront Pricing, Zero Surprises</h3>
+          <p>We quote before we start. Clear written estimates, no hidden fees, no pressure to replace when a solid repair will do.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Local to Gaithersburg</h3>
+          <p>Based near W Diamond Ave — we know the neighborhoods, common deck constructions, and local code expectations.</p>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><strong>Same Day</strong><span>Estimate Availability</span></div>
+        <div class="stat-item"><strong>100%</strong><span>Satisfaction Focus</span></div>
+        <div class="stat-item"><strong>7 Days</strong><span>Service Window</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems preview -->
+  <section class="section" id="problems">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recognize <span>These Signs?</span></h2>
+        <p>Maryland’s climate accelerates deck wear. If you notice any of these, schedule an inspection before a small issue becomes a safety hazard.</p>
+      </div>
+      <div class="problems-grid">
+        <a href="/problems/rotten-boards/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Rotten or Soft Boards</h3>
+          <p>Soft spots, spongy areas, or visible decay mean structural integrity is compromised. Replace boards before someone falls through.</p>
+        </a>
+        <a href="/problems/loose-railings/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Loose or Wobbly Railings</h3>
+          <p>Railings that move when leaned on are a serious fall risk, especially for children and older adults. Fix promptly.</p>
+        </a>
+        <a href="/problems/cracked-wood/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Cracked or Splintered Wood</h3>
+          <p>Cracks and splinters worsen with weather exposure and create trip and injury hazards.</p>
+        </a>
+        <a href="/problems/uneven-surface/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Uneven or Sagging Deck</h3>
+          <p>Sagging often points to joist or beam problems that need structural attention.</p>
+        </a>
+        <a href="/problems/insect-damage/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Insect or Pest Damage</h3>
+          <p>Termites, carpenter ants, and wood-boring insects can silently destroy framing members.</p>
+        </a>
+        <a href="/problems/fading-finish/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Address Soon</span>
+          <h3>Fading or Peeling Finish</h3>
+          <p>A failing finish lets moisture in, accelerating rot. Timely resealing protects your investment.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Expert Deck <span>Repair Services</span></h2>
+        <p>From single-board swaps to full structural reinforcement and refinishing, we handle the full range of deck repairs for Gaithersburg homes.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-label">Most Common</span>
+          <h3>Deck Board Replacement</h3>
+          <p>Replace individual or sections of damaged boards with matching or upgraded materials — wood or composite.</p>
+          <ul>
+            <li>Pressure-treated, cedar, composite</li>
+            <li>Color and grain matching when possible</li>
+            <li>Hidden fastener options</li>
+          </ul>
+          <a href="/services/deck-board-replacement/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <span class="service-label">Safety Critical</span>
+          <h3>Railing &amp; Baluster Repair</h3>
+          <p>Secure loose posts, replace broken balusters, and bring railings up to current safety standards.</p>
+          <ul>
+            <li>Post anchoring and bracing</li>
+            <li>Code-height compliance</li>
+            <li>Wood, composite, metal options</li>
+          </ul>
+          <a href="/services/railing-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <span class="service-label">Structural</span>
+          <h3>Structural Deck Repair</h3>
+          <p>Joist sistering, beam reinforcement, ledger board repairs, and footing work for long-term stability.</p>
+          <ul>
+            <li>Joist &amp; beam assessment</li>
+            <li>Ledger flashing checks</li>
+            <li>Footing and post work</li>
+          </ul>
+          <a href="/services/structural-deck-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <span class="service-label">Protective</span>
+          <h3>Staining &amp; Sealing</h3>
+          <p>Professional cleaning, prep, and application of quality stains and sealers that stand up to Maryland weather.</p>
+          <ul>
+            <li>Deep cleaning &amp; brightening</li>
+            <li>Premium stains &amp; sealers</li>
+            <li>UV and moisture protection</li>
+          </ul>
+          <a href="/services/deck-staining-sealing/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <span class="service-label">Peace of Mind</span>
+          <h3>Deck Safety Inspection</h3>
+          <p>Thorough visual and structural assessment with a clear written report and prioritized recommendations.</p>
+          <ul>
+            <li>Board, joist, and railing check</li>
+            <li>Photo documentation</li>
+            <li>Repair priority list</li>
+          </ul>
+          <a href="/services/deck-inspection/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <span class="service-label">Urgent</span>
+          <h3>Emergency Deck Repair</h3>
+          <p>When a board fails or a railing gives way, we respond quickly to make the area safe.</p>
+          <ul>
+            <li>Rapid response slots</li>
+            <li>Temporary safety measures</li>
+            <li>Permanent repair options</li>
+          </ul>
+          <a href="/services/emergency-deck-repair/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Restore <span>Your Deck</span></h2>
+        <p>A clear, transparent process from first call to finished repair.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <h3>Call or Request Estimate</h3>
+          <p>Tell us about the issue. We schedule a convenient on-site visit, often the same day.</p>
+        </div>
+        <div class="process-step">
+          <h3>On-Site Inspection</h3>
+          <p>We examine boards, railings, structure, and finish. Photos and measurements are taken as needed.</p>
+        </div>
+        <div class="process-step">
+          <h3>Written Estimate</h3>
+          <p>You receive a clear, itemized quote with options. No pressure — decide at your pace.</p>
+        </div>
+        <div class="process-step">
+          <h3>Skilled Repair</h3>
+          <p>With your approval we complete the work efficiently, using quality materials matched to your deck.</p>
+        </div>
+        <div class="process-step">
+          <h3>Walkthrough &amp; Guarantee</h3>
+          <p>We review the completed work with you and stand behind it with a workmanship guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map / Location -->
+  <section class="section section-alt map-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Find Us in <span>Gaithersburg, MD</span></h2>
+        <p>Proudly serving Gaithersburg and all of Montgomery County from West Diamond Avenue.</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="Map of 105 W Diamond Ave, Gaithersburg, MD"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-77.2110%2C39.1365%2C-77.1910%2C39.1465&amp;layer=mapnik&amp;marker=39.1415%2C-77.2010"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p style="text-align:center;margin-top:1.25rem;color:var(--text-muted)">
+        <strong>📍 105 W Diamond Ave, Gaithersburg, MD 20877</strong><br />
+        Serving Gaithersburg · Rockville · Germantown · Clarksburg · Olney · Bethesda and surrounding communities.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Deck Issues in Gaithersburg?</h2>
+      <p>Don’t wait for a small problem to become a safety hazard. Call or text today for a same-day or next-day estimate.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Deck Repair <span>Questions</span></h2>
+        <p>Real answers to what Gaithersburg homeowners ask most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>How much does deck repair cost in Gaithersburg?</h3>
+          <p>Costs vary by scope. Replacing a few boards may start in the low hundreds; full railing rebuilds or structural work run higher. We provide a written estimate after inspecting your deck so you know the number before any work begins.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you work on both wood and composite decks?</h3>
+          <p>Yes. We repair pressure-treated, cedar, redwood, and major composite brands. Material choice for replacements is discussed during the estimate so the repair blends with the existing deck.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does a typical repair take?</h3>
+          <p>Many board and railing repairs are completed in one day. Larger structural projects or full refinishing may take two to three days depending on weather and complexity.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are you licensed and insured in Maryland?</h3>
+          <p>Yes. All work is performed by licensed, insured technicians familiar with Montgomery County requirements and best practices for outdoor structures.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should I repair or replace my deck?</h3>
+          <p>Repair usually makes sense when the structure is sound and damage is localized. Full replacement is worth considering for decks with widespread rot, outdated construction, or when repair costs approach the price of a new build. We give an honest assessment either way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

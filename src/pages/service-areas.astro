@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="Service Areas | Deck Repair Gaithersburg MD" description="Deck repair serving Gaithersburg, Rockville, Germantown, Clarksburg, Olney, Bethesda and surrounding Montgomery County communities.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Areas We Serve</h1>
+      <p>Professional deck repair throughout Gaithersburg and Montgomery County.</p>
+    </div>
+  </section>
+  <section class="content-page">
+    <div class="container">
+      <div class="prose">
+        <h2>Primary Service Area</h2>
+        <p>Based at 105 W Diamond Ave in Gaithersburg, we regularly serve:</p>
+        <ul>
+          <li>Gaithersburg</li>
+          <li>Rockville</li>
+          <li>Germantown</li>
+          <li>Clarksburg</li>
+          <li>Olney</li>
+          <li>Bethesda</li>
+          <li>North Potomac</li>
+          <li>Derwood</li>
+          <li>Montgomery Village</li>
+          <li>Surrounding Montgomery County communities</li>
+        </ul>
+        <p>Not sure if we cover your neighborhood? Call or text — we are happy to confirm.</p>
+        <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+      </div>
+    </div>
+  </section>
+</Layout>

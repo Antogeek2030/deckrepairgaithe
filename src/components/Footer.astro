@@ -1,0 +1,41 @@
+---
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Deck Repair Gaithersburg</h4>
+        <p>Licensed deck repair, board replacement, railing work, staining, and structural fixes serving Gaithersburg and Montgomery County. Same-day estimates, upfront pricing, written guarantee.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="/services/deck-board-replacement/">Board Replacement</a></p>
+        <p><a href="/services/railing-repair/">Railing Repair</a></p>
+        <p><a href="/services/structural-deck-repair/">Structural Repair</a></p>
+        <p><a href="/services/deck-staining-sealing/">Staining &amp; Sealing</a></p>
+        <p><a href="/services/deck-inspection/">Safety Inspection</a></p>
+      </div>
+      <div>
+        <h4>Common Problems</h4>
+        <p><a href="/problems/rotten-boards/">Rotten Boards</a></p>
+        <p><a href="/problems/loose-railings/">Loose Railings</a></p>
+        <p><a href="/problems/cracked-wood/">Cracked Wood</a></p>
+        <p><a href="/problems/uneven-surface/">Sagging Deck</a></p>
+        <p><a href="/problems/insect-damage/">Insect Damage</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+        <p>105 W Diamond Ave<br />Gaithersburg, MD 20877</p>
+        <p>Mon–Sun 7am–7pm</p>
+        <p style="margin-top:0.75rem"><a href="/service-areas/">Service Areas</a> · <a href="/blog/">Blog</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} Deck Repair Gaithersburg MD. All rights reserved. | <a href="/privacy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

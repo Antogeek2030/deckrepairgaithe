@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+---
+<Layout title="About Us | Deck Repair Gaithersburg MD" description="Local, licensed deck repair team serving Gaithersburg and Montgomery County. Honest estimates, quality craftsmanship, and a focus on safety.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Deck Repair Gaithersburg</h1>
+      <p>Local expertise for safe, lasting outdoor spaces across Montgomery County.</p>
+    </div>
+  </section>
+  <section class="content-page">
+    <div class="container">
+      <div class="prose">
+        <h2>Your Neighborhood Deck Specialists</h2>
+        <p>We are a locally focused deck repair team based near West Diamond Avenue in Gaithersburg. Our work centers on practical, honest repairs that restore safety and extend the life of your existing deck — without unnecessary upselling.</p>
+        <h2>What Sets Us Apart</h2>
+        <ul>
+          <li><strong>Local knowledge</strong> — We understand Maryland weather, common construction methods in the area, and local expectations.</li>
+          <li><strong>Upfront pricing</strong> — Clear written estimates before any work begins.</li>
+          <li><strong>Safety first</strong> — We prioritize structural integrity and code-conscious practices.</li>
+          <li><strong>Quality materials</strong> — Matching boards, proper fasteners, and proven finishes.</li>
+        </ul>
+        <h2>Service Area</h2>
+        <p>Gaithersburg, Rockville, Germantown, Clarksburg, Olney, Bethesda, and surrounding Montgomery County communities.</p>
+        <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+      </div>
+    </div>
+  </section>
+</Layout>

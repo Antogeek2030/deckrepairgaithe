@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deckrepairgaithersburgmd.com/sitemap-index.xml

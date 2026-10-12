@@ -1,0 +1,74 @@
+---
+const phone = '+13015550199';
+const phoneDisplay = '(301) 555-0199';
+const currentPath = Astro.url.pathname;
+---
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🪵</span>
+      <span class="logo-text">Deck Repair<br /><small>Gaithersburg, MD</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Our Services <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/services/deck-board-replacement/">Deck Board Replacement</a>
+          <a href="/services/railing-repair/">Railing & Baluster Repair</a>
+          <a href="/services/structural-deck-repair/">Structural Deck Repair</a>
+          <a href="/services/deck-staining-sealing/">Staining & Sealing</a>
+          <a href="/services/deck-inspection/">Deck Safety Inspection</a>
+          <a href="/services/emergency-deck-repair/">Emergency Deck Repair</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Problems <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/problems/rotten-boards/">Rotten or Soft Boards</a>
+          <a href="/problems/loose-railings/">Loose or Wobbly Railings</a>
+          <a href="/problems/cracked-wood/">Cracked or Splintered Wood</a>
+          <a href="/problems/uneven-surface/">Uneven or Sagging Deck</a>
+          <a href="/problems/insect-damage/">Insect or Pest Damage</a>
+          <a href="/problems/fading-finish/">Fading or Peeling Finish</a>
+        </div>
+      </div>
+
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <a href={`tel:${phone}`} class="header-phone">
+      <span>📞</span>
+      <span class="phone-text">{phoneDisplay}</span>
+    </a>
+    <button class="mobile-toggle" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.dropdown');
+      const isOpen = parent?.classList.contains('open');
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+      if (!isOpen) parent?.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element).closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+</script>
